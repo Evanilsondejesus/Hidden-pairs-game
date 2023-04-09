@@ -1,0 +1,38 @@
+
+
+  body{ background: linear-gradient(to left, #f00 30%, rgb(19, 199, 52) 60%,  rgb(154, 19, 199) 95%       );
+  }
+  
+  
+.conteiner{
+    margin: auto;
+  background-color: white;
+  display: flex;
+  width: 505px;
+  flex-wrap: wrap;
+  border: 1px solid;
+  
+  }
+  
+
+
+  .cartas{
+    margin: 2px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid;
+    
+    background-image: url(../imagens/board.png); 
+      
+  }
+
+
+
+
+
+
+
+
+
+
+ 
