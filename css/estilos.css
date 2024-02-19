@@ -1,0 +1,96 @@
+
+/* 
+  body{ background: linear-gradient(to left, rgb(228, 200, 200) 30%, rgb(19, 199, 52) 60%,  rgb(207, 156, 224) 95%       );
+  } */
+  @import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+  body{
+background-image: url("../imagens/passagem_infatil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+
+  }
+
+
+  .container_gameInsigh{
+    width: 50%;
+    background-color:#4FA8FB;
+    
+   border: 4px solid white;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 3%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+ opacity: 0;
+ transition: opacity 1s ease-in-out;
+
+  }
+
+
+
+  .container_gameInsigh span{ 
+  font-family: "Roboto Mono", monospace;
+font-style: normal;
+text-align: center;
+font-family: "Itim", cursive;
+font-weight: 400;
+font-style: normal;
+color: white; 
+  }
+
+ 
+
+#board{  
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+flex-wrap: wrap;
+
+width: 505px;
+max-width: 100%;
+margin: auto;
+grid-auto-flow: dense;
+flex-wrap: wrap;
+opacity: 0;
+transition: opacity 1.3s ease-in-out;
+  }
+  
+
+
+  .cartas{
+    margin: 2px;
+    width: 120px;
+    height: 120px;
+   background-image: url(../imagens/card.svg); 
+   background-color: aliceblue;
+      
+  }
+
+
+
+
+
+  @media (max-width: 699px) {
+     
+  .cartas{
+  width: 25vw;
+   
+  object-fit: contain; /* Ajusta a imagem ao tamanho da caixa sem distorcer */
+  box-sizing: border-box;
+  }
+  .container_gameInsigh{
+  width: 100%;
+  }
+     
+   
+  }
+     
+
+
+
+
+
+ 
